@@ -16,13 +16,13 @@ int primenumber(int x)
 int main()
 {
 	printf("Mersenne primes:\n");
-	long long x = 1;
+	int x = 1;
 	for (int i = 0; i < 31; i++)
 	{
 		x *= 2;
 		if (primenumber(x - 1))
 		{
-			printf("%lli\n", x - 1);
+			printf("%d\n", x - 1);
 		}
 	}
 	return 0;
